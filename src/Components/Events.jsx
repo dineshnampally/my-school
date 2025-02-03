@@ -69,7 +69,7 @@ const Events = () => {
 
                 {/* Image Section (Centered) */}
                 {(item.image1 || item.image2 || item.image3) && (
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 justify-center font-light">
+                  <div className="flex flex-wrap justify-around mb-6 gap-6">
                     {item.image1 && (
                       <img
                         src={item.image1}

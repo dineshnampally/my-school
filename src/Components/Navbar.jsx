@@ -83,6 +83,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
+              <Link to="/announcements" className={`px-3 py-2 ${isActive("/announcements")}`}>
+                Announcements
+              </Link>
+            </li>
+          <li>
             <Link to="/contact" className={`px-4 py-2 ${isActive("/contact")}`} onClick={() => setIsOpen(false)}>
               Contact
             </Link>
