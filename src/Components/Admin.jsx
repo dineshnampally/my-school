@@ -51,12 +51,12 @@ const Admin = () => {
           <section className="">
             <div className="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center">
               <div className="lg:flex-grow mt-5 md:mt-0 md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 className="text-2xl font-extrabold leading-9 tracking-tight mb-3 text-blue-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
+                <h1 className="text-2xl font-extrabold leading-9 tracking-tight mb-3 text-black dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
                   Admin Dashboard
                 </h1>
-                <p className="mb-8 md:pl-0 pl-2 pr-2 leading-relaxed dark:text-gray-300 text-gray-600">
+                <p className="mb-8 md:pl-0 pl-2 pr-2 leading-relaxed dark:text-gray-300 text-black">
                   Manage events, announcements, and view posts all in one place. Streamline your administrative tasks efficiently. <br />
-                  <strong>Refresh the page for better results</strong>
+                  <strong className='text-black'>Refresh the page for better results</strong>
                 </p>
                 <div className="flex justify-center">
                   <Link to="/" className="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-black rounded text-lg">
