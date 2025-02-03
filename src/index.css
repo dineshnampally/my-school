@@ -1,0 +1,14 @@
+
+@import "tailwindcss";
+
+body {
+  font-family: "Quicksand", sans-serif;
+  padding-top: 100px;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
