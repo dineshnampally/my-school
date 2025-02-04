@@ -5,15 +5,15 @@ import logo from "../assets/pixelcut-export.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation(); 
+  const location = useLocation();
 
- 
+
   const isActive = (path) => location.pathname === path ? "text-green-500" : "hover:text-blue-500";
 
   return (
     <nav className="fixed top-0 left-0 right-0 rounded-lg shadow-md bg-white p-4 mt-3 max-w-[95%] lg:max-w-[95%] xl:max-w-[95%] md:max-w-[95%] mx-auto font-semibold z-10">
       <div className="flex justify-between items-center ">
-        
+
         <div className="flex flex-col items-center">
           <Link to="/">
             <img className="w-12" src={logo} alt="Logo" />
@@ -23,7 +23,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-       
+
         <div className="hidden md:flex justify-center flex-1 lg:mx-4 xl:mx-4">
           <ul className="flex gap-6 text-lg">
             <li>
@@ -83,13 +83,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-              <Link to="/announcements" className={`px-3 py-2 ${isActive("/announcements")}`}>
-                Announcements
-              </Link>
-            </li>
-          <li>
-            <Link to="/contact" className={`px-4 py-2 ${isActive("/contact")}`} onClick={() => setIsOpen(false)}>
-              Contact
+            <Link to="/announcements" className={`px-4 py-2 ${isActive("/contact")}`} onClick={() => setIsOpen(false)}>
+            Announcements
             </Link>
           </li>
           <li>
